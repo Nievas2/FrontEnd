@@ -1,0 +1,66 @@
+.foto{
+    height: 80px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 15px 5px grey;
+}
+.neon{
+    border-color:#00f  ;
+    background-color: #000;
+    box-shadow: 0px 0px 25px 5px #000;
+}
+.neonText {
+    color: #fff;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px #0fa,
+        0 0 82px #0fa,
+        0 0 92px #0fa,
+        0 0 102px #0fa,
+        0 0 151px #0fa;
+  }
+  .neonTextRed {
+    color: #fff;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px rgb(248, 12, 12),
+        0 0 82px #f00,
+        0 0 92px #f00,
+        0 0 102px #f00,
+        0 0 151px #f00;
+  }
+@media (min-width: 576px) {
+    .foto{
+        height: 80px;
+        border-radius: 50%;
+        
+        /*box-shadow: 120px 80px 40px 20px #0ff;
+        box-shadow: 5px 5px 5px grey;*/
+        position: absolute;
+        left: 5%;
+        top: 580px;
+    }
+    
+}
+@media (max-width: 575px) {
+    .foto{
+        height: 80px;
+        border-radius: 50%;
+        box-shadow: 5px 5px 5px grey;
+        position: absolute;
+        left: 43%;
+        top: 115%;
+    }
+    h4{
+        text-align: center;
+    }
+    h3{
+        text-align: center;
+    }
+    p{
+        text-align: center;
+    }
+}
