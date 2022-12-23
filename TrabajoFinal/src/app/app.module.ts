@@ -8,6 +8,8 @@ import { LogosComponent } from './components/logos/logos.component';
 import { LogoArgProComponent } from './components/logo-arg-pro/logo-arg-pro.component';
 import { BannerComponent } from './components/banner/banner.component';
 import { SobreMiComponent } from './components/sobre-mi/sobre-mi.component';
+import { ExperienciaLaboralComponent } from './components/experiencia-laboral/experiencia-laboral.component';
+import { EstudiosComponent } from './components/estudios/estudios.component';
 
 
 @NgModule({
@@ -17,7 +19,9 @@ import { SobreMiComponent } from './components/sobre-mi/sobre-mi.component';
     LogosComponent,
     LogoArgProComponent,
     BannerComponent,
-    SobreMiComponent
+    SobreMiComponent,
+    ExperienciaLaboralComponent,
+    EstudiosComponent
   ],
   imports: [
     BrowserModule,
