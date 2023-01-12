@@ -9,6 +9,8 @@
     <a href=""><img src="../../../assets/Instagram.png" class="logos img-fluid" /></a>
   </div>
   <div class="col-sm-12 col-md-3 text-center">
-    <button type="button" class="btn btn-light" style="box-shadow: 0px 0px 10px white;">INGRESAR</button>
+    <button type="button" class="btn btn-light" style="box-shadow: 0px 0px 10px white;" (click)="login()"*ngIf="!isLogged">INGRESAR</button>
+    <button type="button" class="btn btn-light" style="box-shadow: 0px 0px 10px white;" (click)="onLogOut()"*ngIf="isLogged">Cerrar sesion</button>
+
   </div>
 </div>

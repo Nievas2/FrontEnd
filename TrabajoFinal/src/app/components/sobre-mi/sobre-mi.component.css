@@ -18,8 +18,8 @@
         0 0 92px #0fa,
         0 0 102px #0fa,
         0 0 151px #0fa;
-  }
-  .neonTextRed {
+}
+.neonTextRed {
     color: #fff;
     text-shadow:
         0 0 7px #fff,
@@ -31,27 +31,18 @@
         0 0 102px #f00,
         0 0 151px #f00;
   }
-@media (min-width: 576px) {
-    .foto{
-        height: 80px;
-        border-radius: 50%;
-        
-        /*box-shadow: 120px 80px 40px 20px #0ff;
-        box-shadow: 5px 5px 5px grey;*/
-        position: absolute;
-        left: 5%;
-        top: 580px;
-    }
-    
-}
+
+
+
+
 @media (max-width: 575px) {
     .foto{
         height: 80px;
         border-radius: 50%;
-        box-shadow: 5px 5px 5px grey;
+        box-shadow: 0px 0px 15px grey;
         position: absolute;
         left: 43%;
-        top: 115%;
+        top: 135%;
     }
     h4{
         text-align: center;

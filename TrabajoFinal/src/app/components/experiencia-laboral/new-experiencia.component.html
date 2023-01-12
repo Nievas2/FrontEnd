@@ -1,0 +1,45 @@
+
+<section
+  class="pt-5 pb-5 mt-0 align-items-center d-flex bg-dark"
+  style="
+    min-height: 100vh;
+    background-size: cover;
+    background-image: url(https://turismoencordoba.net/wp/wp-content/uploads/2019/05/La-Toma-8.jpg);
+  "
+>
+  <div class="container-fluid">
+    <div
+      class="row justify-content-center align-items-center d-flex-row text-center h-100"
+    >
+      <div class="col-12 col-md-4 col-lg-3 h-50">
+        <div class="card shadow">
+          <div class="card-body mx-auto">
+            <h4 class="card-title mt-3 text-center">Para crear una Experiencia Laboral</h4>
+            <p class="text-center">Por favor ingrese</p>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
+                            <div class="form-group">
+                                <label for="nombreE">Nombre de la empresa</label>
+                                <input type="text" class="form-control" id="nombreE" name="nombreE" [(ngModel)]="nombreE" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="descripcionE">Descripcion</label>
+                                <input type="text" class="form-control" id="descripcionE" name="descripcionE" [(ngModel)]="descripcionE" required>
+                            </div>
+                            <button class="btn btn-light m-2">
+                                    Agregar experiencia
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
