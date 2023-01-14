@@ -12,7 +12,6 @@ import { ExperienciaLaboralComponent } from './components/experiencia-laboral/ex
 import { EducacionComponent } from './components/educacion/educacion.component';
 import { NgCircleProgressModule } from 'ng-circle-progress';
 import { HardSkillsComponent } from './components/hard-skills/hard-skills.component';
-import { SoftSkillComponent } from './components/soft-skill/soft-skill.component';
 import { ProyectosComponent } from './components/proyectos/proyectos.component';
 import { HttpClientModule } from '@angular/common/http';
 import { LoginComponent } from './components/login/login.component';
@@ -25,6 +24,8 @@ import { EditExperienciaComponent } from './components/experiencia-laboral/edit-
 
 import { NewEducacionComponent } from './components/educacion/new-educacion.component';
 import { EditEducacionComponent } from './components/educacion/edit-educacion.component';
+import { EditSkillComponent } from './components/hard-skills/edit-skill.component';
+import { NewSkillComponent } from './components/hard-skills/new-skill.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,14 +37,15 @@ import { EditEducacionComponent } from './components/educacion/edit-educacion.co
     ExperienciaLaboralComponent,
     EducacionComponent,
     HardSkillsComponent,
-    SoftSkillComponent,
     ProyectosComponent,
     LoginComponent,
     HomeComponent,
     NewExperienciaComponent,
     EditExperienciaComponent,
     EditEducacionComponent,
-    NewEducacionComponent
+    NewEducacionComponent,
+    EditSkillComponent,
+    NewSkillComponent
     
     
   ],

@@ -1,15 +1,20 @@
 <div class="p-2 marg" style="background-color: black;">
     <div class="row">
-        <h2 class="text-white">Hard Skills</h2>
+        <h2 class="text-white">Hard Skills y Soft Skills</h2>
+    </div>
+    <div class="col-lg-2 " *ngIf="isLogged">
+      <button type="button" routerLink="/newskill" class="btn btn-light">Nueva Skill</button>
     </div>
     <div class="row">
-        <div class="text-center col-sm-12 col-md-4 col-lg-4 col-lg-2">
+        <div class="text-center col-sm-12 col-md-4 col-lg-4 col-lg-2" *ngFor="let skill of skill">
             <circle-progress
               [backgroundColor]="'white'"
-              [percent]="58"
+              [percent]="(skill.porcentaje)"
               [radius]="100"
               [imageSrc]="'../assets/Bootstrap.png'"
-              [showImage]="true"
+              [title]="(skill.nombre)" 
+              [showTitle]="true"
+              [showImage]="false"
               [imageHeight]="100"
               [imageWidth]="100"
               [showUnits]="false"
@@ -20,8 +25,10 @@
               [animation]="true"
               [animationDuration]="300"
             ></circle-progress>
-            <button type="button" class="btn btn-success text-center">Saber Más</button>
-        </div>
+            <td class="col-lg-1 col-md-1 col-sm-12 text-white" *ngIf="isLogged"><button class="btn btn-light" routerLink="/editskill/{{skill.id}}"><i class="bi bi-pencil"></i></button></td>
+            <td class="col-lg-1 col-md-1 col-sm-12 text-white" *ngIf="isLogged"><button class="btn btn-danger" (click)="delete(skill.id)"><i class="bi bi-trash3-fill"></i></button></td>        
+          </div>
+          <!--
         <div class="text-center col-sm-12 col-md-4 col-lg-4 col-lg-2">
             <circle-progress
               [backgroundColor]="'white'"
@@ -121,7 +128,7 @@
             ></circle-progress>
             <button type="button" class="btn btn-success text-center">Saber Más</button>
 
-        </div>
+        </div>-->
     </div>
 
 </div>

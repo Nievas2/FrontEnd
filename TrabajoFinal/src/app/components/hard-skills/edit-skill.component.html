@@ -1,0 +1,46 @@
+
+<section
+class="pt-5 pb-5 mt-0 align-items-center d-flex bg-dark"
+style="
+  min-height: 100vh;
+  background-size: cover;
+  background-image: url(https://turismoencordoba.net/wp/wp-content/uploads/2019/05/La-Toma-8.jpg);
+"
+>
+<div class="container-fluid">
+  <div
+    class="row justify-content-center align-items-center d-flex-row text-center h-100"
+  >
+    <div class="col-12 col-md-4 col-lg-3 h-50">
+      <div class="card shadow">
+        <div class="card-body mx-auto">
+          <h4 class="card-title mt-3 text-center">Para editar</h4>
+          <p class="text-center">Por favor ingrese</p>
+
+          <div class="container" *ngIf="skill">
+              <div class="row">
+                  <div class="col">
+                      <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+                          <div class="form-group">
+                              <label for="nombre">Nombre de la skill</label>
+                              <input type="text" class="form-control" id="nombre" name="nombre" [(ngModel)]="skill.nombre" required>
+                          </div>
+                          <div class="form-group">
+                              <label for="porcentaje">porcentaje</label>
+                              <input type="text" class="form-control" id="porcentaje" name="porcentaje" [(ngModel)]="skill.porcentaje" required>
+                          </div>
+                          <button class="btn btn-light m-2">
+                                  actualizar skills
+                          </button>
+                      </form>
+                  </div>
+              </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
